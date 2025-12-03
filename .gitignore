@@ -5,6 +5,9 @@
 /build
 /dist
 /.next
+/out
+out.zip
+dalmfoods-static.zip
 
 # misc
 .DS_Store

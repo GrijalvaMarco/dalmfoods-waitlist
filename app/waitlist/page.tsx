@@ -20,19 +20,35 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    let res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formState),
-    });
 
-    let data = await res.json();
-    if (res.ok) {
+    // Configuración de EmailJS
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+
+    try {
+      // Importar emailjs dinámicamente
+      const emailjs = (await import('emailjs-com')).default;
+
+      // Preparar los datos del template
+      const templateParams = {
+        from_name: formState.name,
+        from_email: formState.email,
+        twitter: formState.twitter ? 'Yes' : 'No',
+        newsletter: formState.newsletter ? 'Yes' : 'No',
+        linkedin: formState.linkedin ? 'Yes' : 'No',
+        contact_detail: formState.contactDetail,
+        message: `New waitlist signup!\n\nName: ${formState.name}\nEmail: ${formState.email}\nTwitter: ${formState.twitter ? 'Yes' : 'No'}\nNewsletter: ${formState.newsletter ? 'Yes' : 'No'}\nLinkedIn: ${formState.linkedin ? 'Yes' : 'No'}\nProfile URL: ${formState.contactDetail}`
+      };
+
+      // Enviar email usando EmailJS
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
+      // Redirigir a página de éxito
       router.push('/success');
-    } else {
-      setMessage(data.message);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setMessage('Failed to send message. Please try again.');
       setActive(true);
       setTimeout(() => {
         setActive(false);
@@ -109,7 +125,7 @@ const Contact = () => {
                 />
                 <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.newsletter ? 'bg-black text-white' : 'bg-white text-black'}`}>
                   Newsletter Creator
-                  {formState.newsletter }
+                  {formState.newsletter}
                 </span>
               </label>
               <label className="flex items-center">
@@ -122,7 +138,7 @@ const Contact = () => {
                 />
                 <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.linkedin ? 'bg-black text-white' : 'bg-white text-black'}`}>
                   LinkedIn Influencer
-                  {formState.linkedin }
+                  {formState.linkedin}
                 </span>
               </label>
               <label className="flex items-center">
@@ -135,7 +151,7 @@ const Contact = () => {
                 />
                 <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.twitter ? 'bg-black text-white' : 'bg-white text-black'}`}>
                   Twitter Influencer
-                  {formState.twitter }
+                  {formState.twitter}
                 </span>
               </label>
             </div>
@@ -156,7 +172,7 @@ const Contact = () => {
           )}
 
           <button className="join-waitlist-button" >
-            <JoinWaitlistButton/>
+            <JoinWaitlistButton />
           </button>
         </form>
       </MaxWidthWrapper>
