@@ -1,1 +1,2 @@
-# dalmfoods-waitlist
+## SaaS Product Waitlist Feature Dalmfoods
+This repository contains the template for implementing a waitlist feature for Dalmfoods. The waitlist allows users to express their interest in Dalmfoods before its official launch. 
