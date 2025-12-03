@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar";
 const inter = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Billy BETA",
-  description: "Run Your Entire Creator Business & Get B2B Sponsorships for Newsletter Creator, linkedin Influencer and twitter Influencer ",
+  title: "DalmFoods - Membresías de Comida para Empresas",
+  description: "Plataforma de beneficios alimenticios para empresas. Subsidia comida de tus empleados en restaurantes locales. Mejora la cultura laboral y apoya al comercio local.",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <Navbar />
         {children}</body>
     </html>
   );

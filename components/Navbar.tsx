@@ -9,7 +9,7 @@ const Navbar = async () => {
           <Link href='/' className='flex z-40 font-semibold'>
             <img src='/logo.png' alt='logo' className='w-24 h-8' />
           </Link>
-          
+
           <div className='flex items-center space-x-4'>
             <Link
               href='/waitlist'

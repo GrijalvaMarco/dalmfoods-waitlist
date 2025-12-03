@@ -38,54 +38,57 @@ const Benefits = () => {
       <div className="flex flex-col items-center mb-8">
         <img className="mb-4 w-24 h-24" src="/love.png" alt="icon" />
         <h1 className="text-4xl font-bold text-center flex items-center">
-          Reasons to Love Billy
-          <img className="ml-4 w-12 h-12" src="/billy.png" alt="billyicon" />
+          ¿Por qué elegir DalmFoods?
+          <img className="ml-4 w-12 h-12" src="/billy.png" alt="dalmfoods-icon" />
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-8 ">
         <Card
-          title="Discovery"
-          description="Discover sponsorship & affiliate options "
-          brief="for any audience, across every industry."
+          title="Dashboard Empresarial"
+          description="Controla membresías, empleados y consumos "
+          brief="desde un solo lugar"
           list={[
-            "Effortless brand ad Integration",
-            "Maximized Earnings",
-            "Find deals for your niche audience effortlessly."
+            "Gestión de empleados y membresías",
+            "Reportes de consumo en tiempo real",
+            "Configura subsidio (50%, 100% o personalizado)",
+            "Control de presupuesto mensual"
           ]}
           imageSrc="/discovery.png"
         />
         <Card
-          title="Library"
-          description="Save time, organize and bookmark "
-          brief="your favourite brand deals and affiliate"
+          title="App Móvil"
+          description="Pide tu comida favorita y paga "
+          brief="con tu membresía empresarial"
           list={[
-            "Bookmark Favorite deals",
-            "Search deals and filter them",
-            "Find Both sponsorship & Affiliate programs in seconds",
-            "Streamlining your sponsorship process."
+            "Explora restaurantes cercanos",
+            "Solicita tu comida en segundos",
+            "Genera QR para canjear",
+            "Consulta tu saldo disponible"
           ]}
           imageSrc="/library.png"
           reverse
         />
         <Card
-          title="Matchmaking"
-          description="We showcase your profile to brands "
-          brief='tailored for your audience.'
+          title="Dashboard Restaurantes"
+          description="Recibe pedidos y gestiona canjes "
+          brief='de forma sencilla'
           list={[
-            "We will auto match your profile with brands",
-            "Focus on your content, we will take care of the rest",
-            "Quality audiences, even in smaller numbers, matter to brands."
+            "Escanea QR de empleados",
+            "Recibe pagos automáticos",
+            "Estadísticas de ventas",
+            "Apoyo al comercio local"
           ]}
           imageSrc="/Matchmaking.png"
         />
         <Card
-          title="Tools library"
-          description="Get Suites of tools "
-          brief='which will help you grow your content business'
+          title="Ecosistema Completo"
+          description="Una plataforma que conecta "
+          brief='empresas, empleados y restaurantes'
           list={[
-            "AI tools to make your life easy",
-            "Get a bunch of tools for your creator business at just one price",
-            "No need to jump from SaaS to another; all things under Billy"
+            "Flexibilidad para elegir dónde comer",
+            "Apoyo a negocios locales (fondas, restaurantes)",
+            "Proceso de pago simplificado",
+            "Beneficio real para empleados"
           ]}
           imageSrc="/Tools.png"
           reverse

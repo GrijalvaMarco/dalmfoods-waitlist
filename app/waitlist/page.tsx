@@ -9,9 +9,9 @@ const Contact = () => {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
-    twitter: false,
-    newsletter: false,
-    linkedin: false,
+    isCompany: false,
+    isRestaurant: false,
+    isEmployee: false,
     contactDetail: ""
   });
   const [active, setActive] = useState(false);
@@ -34,11 +34,11 @@ const Contact = () => {
       const templateParams = {
         from_name: formState.name,
         from_email: formState.email,
-        twitter: formState.twitter ? 'Yes' : 'No',
-        newsletter: formState.newsletter ? 'Yes' : 'No',
-        linkedin: formState.linkedin ? 'Yes' : 'No',
+        is_company: formState.isCompany ? 'Sí' : 'No',
+        is_restaurant: formState.isRestaurant ? 'Sí' : 'No',
+        is_employee: formState.isEmployee ? 'Sí' : 'No',
         contact_detail: formState.contactDetail,
-        message: `New waitlist signup!\n\nName: ${formState.name}\nEmail: ${formState.email}\nTwitter: ${formState.twitter ? 'Yes' : 'No'}\nNewsletter: ${formState.newsletter ? 'Yes' : 'No'}\nLinkedIn: ${formState.linkedin ? 'Yes' : 'No'}\nProfile URL: ${formState.contactDetail}`
+        message: `Nueva solicitud de lista de espera!\n\nNombre: ${formState.name}\nEmail: ${formState.email}\nEs Empresa: ${formState.isCompany ? 'Sí' : 'No'}\nEs Restaurante: ${formState.isRestaurant ? 'Sí' : 'No'}\nEs Empleado: ${formState.isEmployee ? 'Sí' : 'No'}\nInformación de contacto: ${formState.contactDetail}`
       };
 
       // Enviar email usando EmailJS
@@ -75,9 +75,9 @@ const Contact = () => {
     <div className="flex flex-col items-center justify-center  min-h-screen p-4 bg-[url('/div.svg')] opacity-100">
       <MaxWidthWrapper>
         <div className="flex justify-center items-center mb-6">
-          <Image src="/logo.png" alt="Billy Logo" width={140} height={140} />
+          <Image src="/logo_dalmfoods.jpeg" alt="Logo DalmFoods" width={140} height={140} />
         </div>
-        <h2 className="text-3xl mb-6 text-center font-bold">Join Waitlist & Get Early Access to Platform</h2>
+        <h2 className="text-3xl mb-6 text-center font-bold">Únete a la Lista de Espera</h2>
 
         {/* Notification for successful form submission */}
         <div
@@ -113,55 +113,55 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col mb-4">
-            <label className="mt-4 mb-2 text-3xl">I am a ______________ (select all that apply to you)</label>
+            <label className="mt-4 mb-2 text-3xl">Soy un/una ______________ (selecciona todas las que apliquen)</label>
             <div className="flex flex-wrap gap-2 justify-center mt-2">
               <label className="flex items-center">
                 <input
                   type="checkbox"
-                  id="newsletter"
-                  checked={formState.newsletter}
+                  id="isCompany"
+                  checked={formState.isCompany}
                   onChange={handleCheckboxChange}
                   className="hidden"
                 />
-                <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.newsletter ? 'bg-black text-white' : 'bg-white text-black'}`}>
-                  Newsletter Creator
-                  {formState.newsletter}
+                <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.isCompany ? 'bg-black text-white' : 'bg-white text-black'}`}>
+                  Empresa
+                  {formState.isCompany}
                 </span>
               </label>
               <label className="flex items-center">
                 <input
                   type="checkbox"
-                  id="linkedin"
-                  checked={formState.linkedin}
+                  id="isRestaurant"
+                  checked={formState.isRestaurant}
                   onChange={handleCheckboxChange}
                   className="hidden"
                 />
-                <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.linkedin ? 'bg-black text-white' : 'bg-white text-black'}`}>
-                  LinkedIn Influencer
-                  {formState.linkedin}
+                <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.isRestaurant ? 'bg-black text-white' : 'bg-white text-black'}`}>
+                  Restaurante
+                  {formState.isRestaurant}
                 </span>
               </label>
               <label className="flex items-center">
                 <input
                   type="checkbox"
-                  id="twitter"
-                  checked={formState.twitter}
+                  id="isEmployee"
+                  checked={formState.isEmployee}
                   onChange={handleCheckboxChange}
                   className="hidden"
                 />
-                <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.twitter ? 'bg-black text-white' : 'bg-white text-black'}`}>
-                  Twitter Influencer
-                  {formState.twitter}
+                <span className={`flex items-center gap-2 px-8 py-4 border rounded-lg cursor-pointer ${formState.isEmployee ? 'bg-black text-white' : 'bg-white text-black'}`}>
+                  Empleado
+                  {formState.isEmployee}
                 </span>
               </label>
             </div>
           </div>
 
-          {(formState.twitter || formState.newsletter || formState.linkedin) && (
+          {(formState.isCompany || formState.isRestaurant || formState.isEmployee) && (
             <div className="flex flex-col mb-4">
-              <label htmlFor="contactDetail" className="sr-only">Enter Your Newsletter, X or LinkedIn Profile URL (any one)</label>
+              <label htmlFor="contactDetail" className="sr-only">Nombre de tu Empresa/Restaurante o Teléfono</label>
               <input
-                placeholder="Enter Your Newsletter, X or LinkedIn Profile URL (any one)"
+                placeholder="Nombre de tu Empresa/Restaurante o Teléfono de contacto"
                 onChange={handleChange}
                 id="contactDetail"
                 type="text"

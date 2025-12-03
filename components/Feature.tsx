@@ -2,22 +2,22 @@ import React from 'react';
 
 const FeaturesSection: React.FC = () => {
   const featuresLeftToRight = [
-    { text: 'Monetization deals', imageSrc: '/Check.png' },
-    { text: 'Connect with brands', imageSrc: '/Check.png' },
-    { text: 'No spammy deals', imageSrc: '/Check.png' },
-    { text: 'Earn more with same efforts', imageSrc: '/Check.png' },
+    { text: 'Subsidio flexible (50% o 100%)', imageSrc: '/Check.png' },
+    { text: 'Red de restaurantes locales', imageSrc: '/Check.png' },
+    { text: 'Control total de consumos', imageSrc: '/Check.png' },
+    { text: 'Mejora la cultura laboral', imageSrc: '/Check.png' },
   ];
 
   const featuresRightToLeft = [
-    { text: 'AI tools to help you grow', imageSrc: '/Check.png' },
-    { text: 'Affiliates programs suitable for you', imageSrc: '/Check.png' },
-    { text: 'Deals for your niche specific audience', imageSrc: '/Check.png' },
+    { text: 'App móvil intuitiva', imageSrc: '/Check.png' },
+    { text: 'Dashboards para empresas y restaurantes', imageSrc: '/Check.png' },
+    { text: 'Pago por QR instantáneo', imageSrc: '/Check.png' },
   ];
 
   return (
     <section className="relative overflow-hidden mt-4 p-4 mb-5">
       <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-      
+
       <div className="flex flex-wrap justify-center gap-4 animate-slideLeftToRight">
         {featuresLeftToRight.map((feature, index) => (
           <div
