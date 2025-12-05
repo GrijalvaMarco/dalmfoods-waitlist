@@ -1,11 +1,16 @@
-import Benefits from '@/components/Benefits';
-import Billy from '@/components/BillyPromise';
+import OriginStory from '@/components/OriginStory';
+import ProblemStatement from '@/components/ProblemStatement';
+import SolutionOverview from '@/components/SolutionOverview';
+import HowItWorks from '@/components/HowItWorks';
+import StakeholderBenefits from '@/components/StakeholderBenefits';
+import VisionMission from '@/components/VisionMission';
 import FeaturesSection from '@/components/Feature';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Offer from '@/components/Offer';
 
 import JoinWaitlistButton from '@/components/ui/joinwaitlist';
 import Link from 'next/link';
+import HeartButton from '@/components/ui/heartbutton';
 
 export default function Home() {
   return (
@@ -14,31 +19,34 @@ export default function Home() {
         <div className="space-y-10">
           <header className="text-center mb-10">
             <div className=" opacity-100 inline-flex items-center justify-center px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <img src='/paw.png' alt='food-icon' className="h-5 w-5 mr-2" />
+              <img src='/logo_dalm.png' alt='food-icon' className="h-16 w-16" />
               <span>TRANSFORMANDO LA CULTURA LABORAL A TRAVÉS DE LA ALIMENTACIÓN</span>
-              <img src='/paw.png' alt='food-icon' className="h-5 w-5 ml-2" />
+              <img src='/logo_dalm.png' alt='food-icon' className="h-16 w-16" />
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold">
-              La Solución Integral para<br />
-              Beneficios de Comida en tu Empresa
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">
+              Alimentación Corporativa Inteligente<br />
+              <span className="text-orange-600">Sin Comedores. Sin Infraestructura. Sin Pasivos.</span>
             </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Conectamos empresas con cocinas locales para ofrecer beneficios de comida subsidiada a tus empleados
+            </p>
           </header>
 
           <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg">
-              <img src='/newsletter.png' alt='empresas' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
+            <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg hover:shadow-lg transition-shadow">
+              <img src='/office-building.png' alt='empresas' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
               <h2 className="text-lg sm:text-xl font-bold mb-4 md:mb-6">Para Empresas</h2>
-              <p>Dashboard completo para gestionar membresías, empleados y consumos en tiempo real.</p>
+              <p>Control total de membresías, subsidios y consumos. Sin inversión en infraestructura.</p>
             </div>
-            <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg">
-              <img src='/linkedin.png' alt='empleados' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
+            <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg hover:shadow-lg transition-shadow">
+              <img src='/multiple-users.png' alt='empleados' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
               <h2 className="text-lg sm:text-xl font-bold mb-2 md:mb-6">Para Empleados</h2>
-              <p>App móvil para pedir comida y generar QR de canje en tus restaurantes favoritos.</p>
+              <p>Comida cercana, accesible y subsidiada. Ahorra tiempo y dinero todos los días.</p>
             </div>
-            <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg">
-              <img src='/x.png' alt='restaurantes' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
-              <h2 className="text-lg sm:text-xl font-bold mb-2 md:mb-6">Para Restaurantes</h2>
-              <p>Panel para recibir pedidos, escanear QR y gestionar ventas de forma automática.</p>
+            <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg hover:shadow-lg transition-shadow">
+              <img src='/store.png' alt='restaurantes' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
+              <h2 className="text-lg sm:text-xl font-bold mb-2 md:mb-6">Para Cocinas Locales</h2>
+              <p>Acceso directo al mundo corporativo. Recibe pedidos y pagos automáticos.</p>
             </div>
           </section>
 
@@ -50,30 +58,43 @@ export default function Home() {
             <img src='/arrow.png' alt='arrow' className="hidden md:block w-8 h-6 md:w-12 md:h-8" />
 
             <Link href='/waitlist' className="join-waitlist-button" >
-              <JoinWaitlistButton />
+              <HeartButton />
             </Link>
           </section>
 
         </div>
       </MaxWidthWrapper>
-      <MaxWidthWrapper className='mt-28 '>
 
-
+      <MaxWidthWrapper className='mt-28'>
         <FeaturesSection />
       </MaxWidthWrapper>
-      <MaxWidthWrapper className='mt-28'>
 
-        <Benefits />
+      <MaxWidthWrapper className='mt-28'>
+        <OriginStory />
       </MaxWidthWrapper>
 
       <MaxWidthWrapper className='mt-28'>
+        <ProblemStatement />
+      </MaxWidthWrapper>
 
+      <MaxWidthWrapper className='mt-28'>
+        <SolutionOverview />
+      </MaxWidthWrapper>
+
+      <MaxWidthWrapper className='mt-28'>
+        <HowItWorks />
+      </MaxWidthWrapper>
+
+      <MaxWidthWrapper className='mt-28'>
+        <StakeholderBenefits />
+      </MaxWidthWrapper>
+
+      {/* <MaxWidthWrapper className='mt-28'>
         <Offer />
-      </MaxWidthWrapper>
+      </MaxWidthWrapper> */}
 
       <MaxWidthWrapper className='mt-28'>
-
-        <Billy />
+        <VisionMission />
       </MaxWidthWrapper>
 
     </div>

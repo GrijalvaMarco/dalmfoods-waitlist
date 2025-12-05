@@ -7,7 +7,7 @@ const Navbar = async () => {
       <MaxWidthWrapper>
         <div className='flex h-14 items-center justify-between'>
           <Link href='/' className='flex z-40 font-semibold'>
-            <img src='/logo.png' alt='logo' className='w-24 h-8' />
+            <img src='/logo_dalm.png' alt='logo' className='w-32 h-32' />
           </Link>
 
           <div className='flex items-center space-x-4'>
@@ -15,7 +15,7 @@ const Navbar = async () => {
               href='/waitlist'
               className='rounded-full text-primary h-9 px-4 md:px-6 text-center text-white bg-black flex items-center justify-center'
             >
-              Join waitlist
+              Me interesa
             </Link>
           </div>
         </div>

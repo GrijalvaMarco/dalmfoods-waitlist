@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import JoinWaitlistButton from './ui/joinwaitlist';
+import HeartButton from './ui/heartbutton';
 
 export default function Billy() {
   return (
@@ -19,7 +19,7 @@ export default function Billy() {
         <img src='/billysign.png' alt='dalmfoods-sign' className="mt-2 mx-auto md:mx-0" />
         <div className="flex items-center justify-center md:justify-start mt-4">
           <Link href='/waitlist' className="join-waitlist-button" >
-            <JoinWaitlistButton />
+            <HeartBu />
           </Link>
         </div>
       </div>

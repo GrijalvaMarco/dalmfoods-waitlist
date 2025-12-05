@@ -26,8 +26,8 @@ export default function Offer() {
             <ChevronRight className='h-4 w-4 text-black' />
           </Link>
         </div>
-        <div className="container  ">
-          <Image src="/ipad.png" alt="Offer Image" layout="responsive" width={600} height={800} />
+        <div className="container relative w-full aspect-[3/4] mt-[-250px]">
+          <Image src="/ipad.png" alt="Offer Image" fill className="object-contain" />
         </div>
       </div>
     </MaxWidthWrapper>

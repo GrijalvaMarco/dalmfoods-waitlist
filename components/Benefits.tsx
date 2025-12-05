@@ -39,7 +39,7 @@ const Benefits = () => {
         <img className="mb-4 w-24 h-24" src="/love.png" alt="icon" />
         <h1 className="text-4xl font-bold text-center flex items-center">
           ¿Por qué elegir DalmFoods?
-          <img className="ml-4 w-12 h-12" src="/billy.png" alt="dalmfoods-icon" />
+          <img className="ml-4 w-12 h-12" src="/logo_dalm.png" alt="dalmfoods-icon" />
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-8 ">

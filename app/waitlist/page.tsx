@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import JoinWaitlistButton from '@/components/ui/joinwaitlist';
+import HeartButton from '@/components/ui/heartbutton';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -172,7 +173,7 @@ const Contact = () => {
           )}
 
           <button className="join-waitlist-button" >
-            <JoinWaitlistButton />
+            <HeartButton text="Te contactaremos" />
           </button>
         </form>
       </MaxWidthWrapper>
