@@ -19,7 +19,7 @@ export default function Billy() {
         <img src='/billysign.png' alt='dalmfoods-sign' className="mt-2 mx-auto md:mx-0" />
         <div className="flex items-center justify-center md:justify-start mt-4">
           <Link href='/waitlist' className="join-waitlist-button" >
-            <HeartBu />
+            <HeartButton text="Únete a la lista de espera" />
           </Link>
         </div>
       </div>
