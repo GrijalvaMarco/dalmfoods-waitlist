@@ -1,14 +1,5 @@
-import OriginStory from '@/components/OriginStory';
-import ProblemStatement from '@/components/ProblemStatement';
-import SolutionOverview from '@/components/SolutionOverview';
-import HowItWorks from '@/components/HowItWorks';
-import StakeholderBenefits from '@/components/StakeholderBenefits';
-import VisionMission from '@/components/VisionMission';
 import FeaturesSection from '@/components/Feature';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
-import Offer from '@/components/Offer';
-
-import JoinWaitlistButton from '@/components/ui/joinwaitlist';
 import Link from 'next/link';
 import HeartButton from '@/components/ui/heartbutton';
 
@@ -57,7 +48,7 @@ export default function Home() {
             </div>
             <img src='/arrow.png' alt='arrow' className="hidden md:block w-8 h-6 md:w-12 md:h-8" />
 
-            <Link href='/waitlist' className="join-waitlist-button" >
+            <Link href='/contact' className="join-waitlist-button" >
               <HeartButton />
             </Link>
           </section>
@@ -68,35 +59,6 @@ export default function Home() {
       <MaxWidthWrapper className='mt-28'>
         <FeaturesSection />
       </MaxWidthWrapper>
-
-      <MaxWidthWrapper className='mt-28'>
-        <OriginStory />
-      </MaxWidthWrapper>
-
-      <MaxWidthWrapper className='mt-28'>
-        <ProblemStatement />
-      </MaxWidthWrapper>
-
-      <MaxWidthWrapper className='mt-28'>
-        <SolutionOverview />
-      </MaxWidthWrapper>
-
-      <MaxWidthWrapper className='mt-28'>
-        <HowItWorks />
-      </MaxWidthWrapper>
-
-      <MaxWidthWrapper className='mt-28'>
-        <StakeholderBenefits />
-      </MaxWidthWrapper>
-
-      {/* <MaxWidthWrapper className='mt-28'>
-        <Offer />
-      </MaxWidthWrapper> */}
-
-      <MaxWidthWrapper className='mt-28'>
-        <VisionMission />
-      </MaxWidthWrapper>
-
     </div>
   );
 }
