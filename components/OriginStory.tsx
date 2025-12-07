@@ -51,9 +51,30 @@ export default function OriginStory() {
                         </p>
                     </div>
 
-                    <p className="text-center text-2xl font-bold text-gray-900 italic pt-4">
-                        "DALM FOODS nace donde la necesidad se encuentra con el propósito."
-                    </p>
+
+                    {/* Quote Section */}
+                    <div className="relative bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 md:p-12 border-l-4 border-orange-500 mt-8">
+                        <div className="absolute top-4 left-4 text-orange-500 opacity-20">
+                            <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                            </svg>
+                        </div>
+                        <blockquote className="relative z-10">
+                            <p className="text-2xl md:text-3xl font-bold text-gray-900 italic text-center mb-6 leading-relaxed">
+                                "DALM FOODS nace donde la necesidad se encuentra con el propósito."
+                            </p>
+                            <footer className="text-center">
+                                <div className="inline-flex flex-col items-center">
+                                    <cite className="not-italic font-semibold text-lg text-gray-900">
+                                        Ángel Díaz
+                                    </cite>
+                                    <span className="text-sm text-orange-600 font-medium mt-1">
+                                        CEO, DalmFoods
+                                    </span>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
         </section>
