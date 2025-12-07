@@ -27,3 +27,4 @@ lerna-debug.log*
 # Other common exclusions
 *.log
 *.tgz
+.env

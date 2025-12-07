@@ -3,7 +3,6 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import JoinWaitlistButton from '@/components/ui/joinwaitlist';
 import HeartButton from '@/components/ui/heartbutton';
 
 const Contact = () => {
@@ -22,39 +21,51 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Configuración de EmailJS
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+    // URL de tu Google Apps Script
+    const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || '';
 
-    try {
-      // Importar emailjs dinámicamente
-      const emailjs = (await import('emailjs-com')).default;
-
-      // Preparar los datos del template
-      const templateParams = {
-        from_name: formState.name,
-        from_email: formState.email,
-        is_company: formState.isCompany ? 'Sí' : 'No',
-        is_restaurant: formState.isRestaurant ? 'Sí' : 'No',
-        is_employee: formState.isEmployee ? 'Sí' : 'No',
-        contact_detail: formState.contactDetail,
-        message: `Nueva solicitud de lista de espera!\n\nNombre: ${formState.name}\nEmail: ${formState.email}\nEs Empresa: ${formState.isCompany ? 'Sí' : 'No'}\nEs Restaurante: ${formState.isRestaurant ? 'Sí' : 'No'}\nEs Empleado: ${formState.isEmployee ? 'Sí' : 'No'}\nInformación de contacto: ${formState.contactDetail}`
-      };
-
-      // Enviar email usando EmailJS
-      await emailjs.send(serviceID, templateID, templateParams, publicKey);
-
-      // Redirigir a página de éxito
-      router.push('/success');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      setMessage('Failed to send message. Please try again.');
+    if (!GOOGLE_SCRIPT_URL) {
+      console.error('Google Script URL is not configured. Please check your .env.local file.');
+      setMessage('Error de configuración. Por favor contacta al administrador.');
       setActive(true);
       setTimeout(() => {
         setActive(false);
         setMessage("");
-      }, 3000);
+      }, 5000);
+      return;
+    }
+
+    try {
+      // Preparar los datos
+      const formData = {
+        name: formState.name,
+        email: formState.email,
+        isCompany: formState.isCompany ? 'Sí' : 'No',
+        isRestaurant: formState.isRestaurant ? 'Sí' : 'No',
+        isEmployee: formState.isEmployee ? 'Sí' : 'No',
+        contactDetail: formState.contactDetail || 'No proporcionado',
+      };
+
+      // Enviar a Google Sheets
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Importante para Google Apps Script
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Redirigir a página de éxito
+      router.push('/success');
+    } catch (error) {
+      console.error('Error sending data:', error);
+      setMessage('Error al enviar el formulario. Por favor intenta de nuevo.');
+      setActive(true);
+      setTimeout(() => {
+        setActive(false);
+        setMessage("");
+      }, 5000);
     }
   };
 
