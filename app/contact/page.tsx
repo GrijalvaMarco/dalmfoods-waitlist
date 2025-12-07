@@ -104,8 +104,8 @@ export default function ContactPage() {
                     <div className="bg-white p-6 rounded-xl shadow-md text-center">
                         <div className="text-4xl mb-3">📧</div>
                         <h3 className="font-bold text-lg mb-2">Email</h3>
-                        <a href="mailto:contacto@dalfoods.com.mx" className="text-orange-600 hover:underline">
-                            contacto@dalfoods.com.mx
+                        <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline">
+                            contacto@dalmfoods.com.mx
                         </a>
                     </div>
                     <div className="bg-white p-6 rounded-xl shadow-md text-center">

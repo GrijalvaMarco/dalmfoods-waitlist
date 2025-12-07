@@ -52,8 +52,8 @@ const Footer = () => {
                         <ul className="space-y-3 text-gray-400">
                             <li className="flex items-start">
                                 <span className="mr-2">📧</span>
-                                <a href="mailto:contacto@dalfoods.com.mx" className="hover:text-orange-500 transition-colors">
-                                    contacto@dalfoods.com.mx
+                                <a href="mailto:contacto@dalmfoods.com.mx" className="hover:text-orange-500 transition-colors">
+                                    contacto@dalmfoods.com.mx
                                 </a>
                             </li>
                             <li className="flex items-start">
