@@ -6,7 +6,7 @@ export default function VisionMission() {
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                     <img src="/logo_dalm.png" alt="DALM FOODS" className="w-64 h-64 mx-auto mt-[-90px]" />
-                    <h2 className="text-3xl md:text-5xl font-bold mt-[-64px]">
+                    <h2 className="text-2xl md:text-3xl font-bold mt-[-64px]">
                         Nuestra Visión y Misión
                     </h2>
                 </div>

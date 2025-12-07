@@ -91,7 +91,7 @@ export default function ContactPage() {
             <MaxWidthWrapper>
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-6">
                         Contacto
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">

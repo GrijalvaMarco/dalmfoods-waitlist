@@ -8,7 +8,7 @@ const ForKitchens = () => {
             <div className="max-w-7xl mx-auto px-4">
                 {/* Hero Section */}
                 <div className="text-center mb-16">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
                         AYÚDANOS A CRECER CONTIGO<br />
                         <span className="text-orange-600">Y CONVIERTE TU TALENTO EN LA COCINA</span><br />
                         EN UN INGRESO CONSTANTE
@@ -140,16 +140,18 @@ const ForKitchens = () => {
                 </div>
 
                 {/* CTA Section */}
-                <div className="text-center bg-gray-900 text-white p-12 rounded-2xl">
-                    <h2 className="text-3xl font-bold mb-4">
+                <div className="text-center bg-gray-900 text-white p-8 md:p-12 rounded-2xl">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4">
                         ¿Listo para cocinar con DALM?
                     </h2>
-                    <p className="text-lg mb-6">
+                    <p className="text-base md:text-lg mb-6">
                         Únete a nuestra red de cocinas y empieza a generar ingresos constantes
                     </p>
-                    <Link href="/contact" className="inline-block">
-                        <HeartButton text="Quiero Cocinar con DALM" />
-                    </Link>
+                    <div className="flex justify-center px-4">
+                        <Link href="/contact" className="inline-block">
+                            <HeartButton text="Quiero Cocinar con DALM" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

@@ -8,9 +8,9 @@ const ForEmployees = () => {
             <div className="max-w-7xl mx-auto px-4">
                 {/* Hero Section */}
                 <div className="text-center mb-16">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        BENEFICIOS PARA<br />
-                        <span className="text-orange-600">COLABORADORES</span>
+                    <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                        COME BIEN, TRABAJA MEJOR<br />
+                        <span className="text-orange-600">COMIDA SUBSIDIADA CERCA DE TU OFICINA</span>
                     </h1>
                     <p className="text-2xl md:text-3xl font-semibold text-gray-800">
                         Comer bien todos los días sí puede ser parte de tu trabajo

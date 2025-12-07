@@ -8,9 +8,9 @@ const ForCompanies = () => {
             <div className="max-w-7xl mx-auto px-4">
                 {/* Hero Section */}
                 <div className="text-center mb-16">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        HOY DÍA LA PRODUCTIVIDAD<br />
-                        <span className="text-orange-600">YA NO DEPENDE SOLO DEL SALARIO</span>
+                    <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                        TRANSFORMA LA PRODUCTIVIDAD DE TU EMPRESA<br />
+                        <span className="text-orange-600">CON BENEFICIOS DE ALIMENTACIÓN INTELIGENTES</span>
                     </h1>
                     <p className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8">
                         LAS EMPRESAS QUE ENTIENDEN EL BIENESTAR<br />

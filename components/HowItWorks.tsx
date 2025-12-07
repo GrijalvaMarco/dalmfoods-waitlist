@@ -68,19 +68,19 @@ export default function HowItWorks() {
                 </div>
 
                 <div className="bg-gray-900 rounded-2xl p-8 text-white">
-                    <h3 className="font-bold text-2xl mb-4 text-center">Todo el proceso está diseñado para ser:</h3>
+                    <h3 className="font-bold text-xl md:text-2xl mb-4 text-center">Todo el proceso está diseñado para ser:</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                         <div className="bg-white/10 rounded-xl p-4 border border-white/20">
-                            <p className="font-bold text-lg">Ágil</p>
+                            <p className="font-bold text-base md:text-lg">Ágil</p>
                         </div>
                         <div className="bg-white/10 rounded-xl p-4 border border-white/20">
-                            <p className="font-bold text-lg">Transparente</p>
+                            <p className="font-bold text-base md:text-lg break-words">Transparente</p>
                         </div>
                         <div className="bg-white/10 rounded-xl p-4 border border-white/20">
-                            <p className="font-bold text-lg">Fácil de usar</p>
+                            <p className="font-bold text-base md:text-lg">Fácil de usar</p>
                         </div>
                         <div className="bg-white/10 rounded-xl p-4 border border-white/20">
-                            <p className="font-bold text-lg">Sin fricción</p>
+                            <p className="font-bold text-base md:text-lg">Sin fricción</p>
                         </div>
                     </div>
                 </div>

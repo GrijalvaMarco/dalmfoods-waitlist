@@ -8,7 +8,7 @@ export default function TermsPage() {
                 <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4">
                             Términos y Condiciones
                         </h1>
                         <p className="text-gray-600">
@@ -29,7 +29,7 @@ export default function TermsPage() {
 
                         {/* Section 1 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Objeto</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">1. Objeto</h2>
                             <p className="text-gray-700">
                                 La Plataforma ofrece servicios digitales que incluyen: acceso a contenidos,
                                 herramientas administrativas, funcionalidades de gestión de beneficios alimentarios,
@@ -40,7 +40,7 @@ export default function TermsPage() {
 
                         {/* Section 2 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Usuarios</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">2. Usuarios</h2>
                             <p className="text-gray-700 mb-3">
                                 Los servicios están dirigidos a distintos tipos de usuarios:
                             </p>
@@ -57,7 +57,7 @@ export default function TermsPage() {
 
                         {/* Section 3 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Uso de la Plataforma</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">3. Uso de la Plataforma</h2>
                             <p className="text-gray-700 mb-3">El usuario se compromete a:</p>
                             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                                 <li>Proporcionar información veraz y actualizada</li>
@@ -72,7 +72,7 @@ export default function TermsPage() {
 
                         {/* Section 4 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Servicios de Terceros</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">4. Servicios de Terceros</h2>
                             <p className="text-gray-700">
                                 La Plataforma puede integrar servicios, productos o herramientas provenientes de terceros
                                 (cocinas locales, procesadores de pago, etc.). DALM Foods no se hace cargo por la calidad,
@@ -82,7 +82,7 @@ export default function TermsPage() {
 
                         {/* Section 5 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Disponibilidad</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">5. Disponibilidad</h2>
                             <p className="text-gray-700">
                                 La Plataforma podrá experimentar interrupciones, mantenimientos o actualizaciones.
                                 No se garantiza disponibilidad continua ni ausencia de errores.
@@ -91,7 +91,7 @@ export default function TermsPage() {
 
                         {/* Section 6 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Responsabilidad</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Responsabilidad</h2>
                             <p className="text-gray-700 mb-3">
                                 El uso de la Plataforma es bajo responsabilidad del usuario. DALM Foods no será responsable por:
                             </p>
@@ -108,7 +108,7 @@ export default function TermsPage() {
 
                         {/* Section 7 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Pagos</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Pagos</h2>
                             <p className="text-gray-700 mb-3">En caso de existir servicios de pago:</p>
                             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                                 <li>Las tarifas, cargos y condiciones serán comunicadas dentro de la Plataforma</li>
@@ -119,7 +119,7 @@ export default function TermsPage() {
 
                         {/* Section 8 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Propiedad Intelectual</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">8. Propiedad Intelectual</h2>
                             <p className="text-gray-700">
                                 Todos los elementos de la Plataforma (software, diseño, marcas, contenido) pertenecen
                                 a DALM Foods o cuentan con licencias correspondientes. Está prohibido reproducir,
@@ -129,7 +129,7 @@ export default function TermsPage() {
 
                         {/* Section 9 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Modificaciones</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">9. Modificaciones</h2>
                             <p className="text-gray-700">
                                 DALM Foods puede modificar estos Términos en cualquier momento. El uso posterior
                                 implica aceptación de los términos modificados.
@@ -138,7 +138,7 @@ export default function TermsPage() {
 
                         {/* Section 10 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Ley Aplicable y Jurisdicción</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">10. Ley Aplicable y Jurisdicción</h2>
                             <p className="text-gray-700">
                                 Estos Términos se regirán por las leyes aplicables de <strong>México</strong> y
                                 cualquier controversia será resuelta en los tribunales competentes de dicha jurisdicción.
@@ -147,7 +147,7 @@ export default function TermsPage() {
 
                         {/* Section 11 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Contacto</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">11. Contacto</h2>
                             <p className="text-gray-700 mb-3">
                                 Para consultas relacionadas con estos Términos:
                             </p>

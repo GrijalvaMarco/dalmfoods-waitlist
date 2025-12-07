@@ -8,7 +8,7 @@ export default function PrivacyPage() {
                 <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4">
                             Aviso de Privacidad
                         </h1>
                         <p className="text-gray-600">
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
 
                         {/* Section 1 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Identidad del Responsable</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">1. Identidad del Responsable</h2>
                             <div className="bg-gray-50 border-l-4 border-orange-500 p-6 rounded">
                                 <p className="text-gray-800 mb-2">
                                     <strong>DALM Foods</strong>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
 
                         {/* Section 2 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Datos que Podemos Recabar</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">2. Datos que Podemos Recabar</h2>
                             <p className="text-gray-700 mb-3">
                                 Dependiendo de la interacción con la Plataforma, se pueden solicitar datos como:
                             </p>
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
 
                         {/* Section 3 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Finalidades del Tratamiento</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">3. Finalidades del Tratamiento</h2>
 
                             <div className="mb-6">
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Finalidades Principales:</h3>
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
 
                         {/* Section 4 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Transferencia de Datos</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">4. Transferencia de Datos</h2>
                             <p className="text-gray-700 mb-3">Los datos pueden compartirse con:</p>
                             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                                 <li>Proveedores de servicios tecnológicos (hosting, almacenamiento)</li>
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
 
                         {/* Section 5 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">
                                 5. Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición)
                             </h2>
                             <p className="text-gray-700 mb-4">
@@ -131,7 +131,7 @@ export default function PrivacyPage() {
 
                         {/* Section 6 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Seguridad de los Datos</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Seguridad de los Datos</h2>
                             <p className="text-gray-700">
                                 DALM Foods implementa medidas administrativas, técnicas y físicas para proteger
                                 la información contra accesos no autorizados, pérdida, alteración o destrucción.
@@ -147,7 +147,7 @@ export default function PrivacyPage() {
 
                         {/* Section 7 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Conservación de Datos</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Conservación de Datos</h2>
                             <p className="text-gray-700">
                                 Los datos serán conservados únicamente por el tiempo necesario para cumplir las
                                 finalidades mencionadas o según lo requiera la legislación aplicable. Una vez
@@ -157,7 +157,7 @@ export default function PrivacyPage() {
 
                         {/* Section 8 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Uso de Cookies y Tecnologías Similares</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">8. Uso de Cookies y Tecnologías Similares</h2>
                             <p className="text-gray-700">
                                 La Plataforma puede utilizar cookies y tecnologías similares para mejorar la
                                 experiencia del usuario, analizar el uso del sitio y personalizar contenido.
@@ -168,7 +168,7 @@ export default function PrivacyPage() {
 
                         {/* Section 9 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Cambios al Aviso de Privacidad</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">9. Cambios al Aviso de Privacidad</h2>
                             <p className="text-gray-700">
                                 DALM Foods se reserva el derecho de modificar este Aviso de Privacidad en
                                 cualquier momento. Cualquier modificación será publicada en la Plataforma y
@@ -179,7 +179,7 @@ export default function PrivacyPage() {
 
                         {/* Section 10 */}
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Consentimiento</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">10. Consentimiento</h2>
                             <p className="text-gray-700">
                                 Al proporcionar sus datos personales a través de la Plataforma, el usuario
                                 consiente el tratamiento de los mismos conforme a este Aviso de Privacidad.
@@ -188,7 +188,7 @@ export default function PrivacyPage() {
 
                         {/* Contact Section */}
                         <section className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Contacto para Dudas o Aclaraciones</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">Contacto para Dudas o Aclaraciones</h2>
                             <p className="text-gray-700 mb-4">
                                 Si tiene alguna duda o comentario sobre este Aviso de Privacidad, puede contactarnos en:
                             </p>
