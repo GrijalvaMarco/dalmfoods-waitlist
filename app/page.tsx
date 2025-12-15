@@ -19,7 +19,7 @@ export default function Home() {
               <span className="text-orange-600">Sin Comedores. Sin Infraestructura. Sin Pasivos.</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-             Gestionamos el beneficio alimenticio de tus empleados a través de una red curada de cocinas.
+              Gestionamos el beneficio alimenticio de tus empleados a través de una red de cocinas evaluadas y aprobadas.
             </p>
           </header>
 
