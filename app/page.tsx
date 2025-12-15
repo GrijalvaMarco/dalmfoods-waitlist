@@ -27,7 +27,7 @@ export default function Home() {
             <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg hover:shadow-lg transition-shadow">
               <img src='/office-building.png' alt='empresas' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
               <h2 className="text-lg sm:text-xl font-bold mb-4 md:mb-6">Para Empresas</h2>
-              <p>Plan de subsidio flexible. Adaptado a tus necesidades.</p>
+              <p>Plan de subsidio flexible adaptado a las necesidades de tu empresa y de tus colaboradores.</p>
             </div>
             <div className="p-6 sm:p-8 md:p-12 bg-white border rounded-lg hover:shadow-lg transition-shadow">
               <img src='/multiple-users.png' alt='empleados' className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4" />
