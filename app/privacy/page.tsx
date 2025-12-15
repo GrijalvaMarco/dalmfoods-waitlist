@@ -18,188 +18,83 @@ export default function PrivacyPage() {
 
                     {/* Content */}
                     <div className="prose prose-lg max-w-none space-y-8">
-                        <p className="text-lg text-gray-700">
-                            Este Aviso describe cómo <strong>DALM Foods</strong> ("el Responsable") recaba,
-                            usa, almacena y protege los datos personales de los usuarios.
-                        </p>
-
-                        {/* Section 1 */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">1. Identidad del Responsable</h2>
-                            <div className="bg-gray-50 border-l-4 border-orange-500 p-6 rounded">
-                                <p className="text-gray-800 mb-2">
-                                    <strong>DALM Foods</strong>
-                                </p>
-                                <p className="text-gray-700 mb-2">
-                                    📍 Domicilio: Ciudad de México, México
-                                </p>
-                                <p className="text-gray-700">
-                                    📧 Contacto: <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline">contacto@dalmfoods.com.mx</a>
-                                </p>
-                                <p className="text-gray-700 mt-2">
-                                    📱 Teléfono: <a href="tel:+525576350310" className="text-orange-600 hover:underline">+52 (55) 7635-0310</a>
-                                </p>
-                            </div>
-                        </section>
-
-                        {/* Section 2 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">2. Datos que Podemos Recabar</h2>
-                            <p className="text-gray-700 mb-3">
-                                Dependiendo de la interacción con la Plataforma, se pueden solicitar datos como:
-                            </p>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                <li>Datos de identificación (nombre, RFC)</li>
-                                <li>Datos de contacto (correo electrónico, teléfono)</li>
-                                <li>Datos de acceso a la Plataforma (usuario, contraseña)</li>
-                                <li>Información necesaria para el funcionamiento del servicio (tipo de usuario, empresa)</li>
-                                <li>Datos de pago (cuando aplique)</li>
-                                <li>Datos técnicos del dispositivo o navegación</li>
-                            </ul>
-                            <p className="text-gray-700 mt-3 font-medium">
-                                No se recabarán datos sensibles sin consentimiento expreso.
-                            </p>
-                        </section>
-
-                        {/* Section 3 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">3. Finalidades del Tratamiento</h2>
-
-                            <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Finalidades Principales:</h3>
-                                <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                    <li>Proveer los servicios de la Plataforma</li>
-                                    <li>Gestionar cuentas de usuario (empresas, colaboradores, cocinas)</li>
-                                    <li>Procesar pagos y transacciones</li>
-                                    <li>Dar cumplimiento a obligaciones contractuales o legales</li>
-                                    <li>Brindar soporte técnico y atención al cliente</li>
-                                    <li>Gestionar beneficios de alimentación corporativa</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Finalidades Secundarias (Opcionales):</h3>
-                                <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                    <li>Envío de información, promociones o comunicaciones comerciales</li>
-                                    <li>Análisis estadístico o de mejora de servicios</li>
-                                    <li>Personalización de la experiencia del usuario</li>
-                                </ul>
-                            </div>
-                        </section>
-
-                        {/* Section 4 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">4. Transferencia de Datos</h2>
-                            <p className="text-gray-700 mb-3">Los datos pueden compartirse con:</p>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                <li>Proveedores de servicios tecnológicos (hosting, almacenamiento)</li>
-                                <li>Procesadores de pago</li>
-                                <li>Cocinas y restaurantes afiliados (solo información necesaria para el servicio)</li>
-                                <li>Autoridades competentes cuando la ley lo requiera</li>
-                            </ul>
-                            <p className="text-gray-700 mt-3 font-medium">
-                                No se venden datos personales a terceros.
-                            </p>
-                        </section>
-
-                        {/* Section 5 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">
-                                5. Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición)
-                            </h2>
-                            <p className="text-gray-700 mb-4">
-                                El titular puede ejercer sus derechos ARCO enviando una solicitud a:
-                            </p>
-                            <div className="bg-orange-50 border-l-4 border-orange-500 p-4 rounded mb-4">
-                                <p className="text-gray-800">
-                                    📧 <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline font-medium">contacto@dalmfoods.com.mx</a>
-                                </p>
-                            </div>
                             <p className="text-gray-700">
-                                La solicitud deberá incluir:
+                                Responsable del tratamiento de los datos personales:
                             </p>
+                            <p className="text-gray-700">
+                                DALM Foods S. de R.L. de C.V., con domicilio en México y correo de contacto
+                                <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline"> contacto@dalmfoods.com.mx</a>.
+                            </p>
+                        </section>
+
+                        {/* 1. Datos personales recabados */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">1. Datos personales recabados</h2>
+                            <p className="text-gray-700">Dependiendo del tipo de usuario, recabamos:</p>
                             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-2">
-                                <li>Nombre completo del titular</li>
-                                <li>Domicilio o correo electrónico para recibir respuesta</li>
-                                <li>Documentos que acrediten la identidad</li>
-                                <li>Descripción clara del derecho que desea ejercer</li>
-                            </ul>
-                            <p className="text-gray-700 mt-3">
-                                La respuesta se dará en un plazo máximo de 20 días hábiles.
-                            </p>
-                        </section>
-
-                        {/* Section 6 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Seguridad de los Datos</h2>
-                            <p className="text-gray-700">
-                                DALM Foods implementa medidas administrativas, técnicas y físicas para proteger
-                                la información contra accesos no autorizados, pérdida, alteración o destrucción.
-                                Estas medidas incluyen:
-                            </p>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-3">
-                                <li>Cifrado de datos sensibles</li>
-                                <li>Acceso restringido a información personal</li>
-                                <li>Monitoreo de sistemas</li>
-                                <li>Capacitación del personal</li>
+                                <li>Nombre, correo electrónico, teléfono</li>
+                                <li>Datos fiscales y de facturación (Empresas y Restaurantes)</li>
+                                <li>Dirección de entrega (si aplica)</li>
+                                <li>Información relacionada con pedidos y consumo</li>
                             </ul>
                         </section>
 
-                        {/* Section 7 */}
+                        {/* 2. Finalidades primarias */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Conservación de Datos</h2>
-                            <p className="text-gray-700">
-                                Los datos serán conservados únicamente por el tiempo necesario para cumplir las
-                                finalidades mencionadas o según lo requiera la legislación aplicable. Una vez
-                                cumplida la finalidad, los datos serán eliminados o bloqueados.
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">2. Finalidades primarias</h2>
+                            <p className="text-gray-700">Los datos personales serán utilizados para:</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-2">
+                                <li>Proveer y operar la plataforma DALM Foods.</li>
+                                <li>Procesar pedidos, pagos y entregas.</li>
+                                <li>Gestionar cuentas, membresías, subsidios y reportes.</li>
+                                <li>Cumplir con obligaciones legales y administrativas.</li>
+                            </ul>
+                        </section>
+
+                        {/* 3. Finalidades secundarias */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">3. Finalidades secundarias (publicidad y personalización)</h2>
+                            <p className="text-gray-700">Adicionalmente, los datos personales podrán ser utilizados para:</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mt-2">
+                                <li>Envío de promociones, recomendaciones y campañas informativas relacionadas con intereses y hábitos de consumo.</li>
+                                <li>Personalización de la experiencia dentro de la plataforma, incluyendo sugerencias de restaurantes, menús o beneficios.</li>
+                            </ul>
+                            <p className="text-gray-700 mt-2">
+                                El titular podrá negar o revocar su consentimiento para estos fines secundarios en cualquier momento, sin que ello afecte los servicios principales, enviando un correo a
+                                <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline"> contacto@dalmfoods.com.mx</a>.
                             </p>
                         </section>
 
-                        {/* Section 8 */}
+                        {/* 4. Transferencia de datos */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">8. Uso de Cookies y Tecnologías Similares</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">4. Transferencia de datos</h2>
+                            <p className="text-gray-700">Los datos podrán ser compartidos con proveedores de pago, logística y servicios tecnológicos, únicamente para cumplir con las finalidades descritas.</p>
+                        </section>
+
+                        {/* 5. Derechos ARCO */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">5. Derechos ARCO</h2>
                             <p className="text-gray-700">
-                                La Plataforma puede utilizar cookies y tecnologías similares para mejorar la
-                                experiencia del usuario, analizar el uso del sitio y personalizar contenido.
-                                El usuario puede configurar su navegador para rechazar cookies, aunque esto
-                                puede afectar la funcionalidad del sitio.
+                                El titular podrá ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) enviando una solicitud al correo
+                                <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline"> contacto@dalmfoods.com.mx</a>.
                             </p>
                         </section>
 
-                        {/* Section 9 */}
+                        {/* 6. Medidas de seguridad */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">9. Cambios al Aviso de Privacidad</h2>
-                            <p className="text-gray-700">
-                                DALM Foods se reserva el derecho de modificar este Aviso de Privacidad en
-                                cualquier momento. Cualquier modificación será publicada en la Plataforma y
-                                entrará en vigor a partir de dicho momento. Se recomienda revisar periódicamente
-                                este aviso.
-                            </p>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Medidas de seguridad</h2>
+                            <p className="text-gray-700">DALM Foods implementa medidas administrativas, técnicas y físicas para proteger los datos personales.</p>
                         </section>
 
-                        {/* Section 10 */}
+                        {/* 7. Cambios al aviso de privacidad */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">10. Consentimiento</h2>
-                            <p className="text-gray-700">
-                                Al proporcionar sus datos personales a través de la Plataforma, el usuario
-                                consiente el tratamiento de los mismos conforme a este Aviso de Privacidad.
-                            </p>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Cambios al aviso de privacidad</h2>
+                            <p className="text-gray-700">DALM Foods podrá modificar el presente Aviso de Privacidad. Las actualizaciones serán publicadas en la plataforma.</p>
                         </section>
 
-                        {/* Contact Section */}
-                        <section className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">Contacto para Dudas o Aclaraciones</h2>
-                            <p className="text-gray-700 mb-4">
-                                Si tiene alguna duda o comentario sobre este Aviso de Privacidad, puede contactarnos en:
-                            </p>
-                            <div className="space-y-2">
-                                <p className="text-gray-800">
-                                    📧 Email: <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline font-medium">contacto@dalmfoods.com.mx</a>
-                                </p>
-                                <p className="text-gray-800">
-                                    📱 Teléfono: <a href="tel:+525576350310" className="text-orange-600 hover:underline font-medium">+52 (55) 7635-0310</a>
-                                </p>
-                            </div>
+                        <section>
+                            <p className="text-gray-700">Al utilizar la plataforma, el usuario reconoce haber leído y aceptado el presente Aviso de Privacidad y los Términos y Condiciones.</p>
                         </section>
                     </div>
 

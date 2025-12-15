@@ -19,146 +19,107 @@ export default function TermsPage() {
                     {/* Content */}
                     <div className="prose prose-lg max-w-none space-y-8">
                         <p className="text-lg text-gray-700">
-                            Bienvenido. Estos Términos y Condiciones regulan el acceso y uso de la plataforma,
-                            aplicaciones y servicios proporcionados por <strong>DALM Foods</strong> ("la Plataforma").
+                            El presente documento establece los Términos y Condiciones que regulan el acceso, uso y operación de la plataforma DALM Foods, para efectos de conocimiento, aceptación y cumplimiento por parte de las Empresas, Restaurantes, Cocinas y Usuarios finales que hagan uso de los servicios ofrecidos por DALM Foods S. de R.L. de C.V.
                         </p>
-
                         <p className="text-lg text-gray-700">
-                            Al acceder o utilizar la Plataforma, el usuario acepta estos Términos.
+                            El acceso y uso de la plataforma implica la aceptación expresa de los presentes Términos y Condiciones. En caso de no estar de acuerdo con los mismos, el usuario deberá abstenerse de utilizar los servicios.
                         </p>
 
-                        {/* Section 1 */}
+                        {/* 1. Definiciones */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">1. Objeto</h2>
-                            <p className="text-gray-700">
-                                La Plataforma ofrece servicios digitales que incluyen: acceso a contenidos,
-                                herramientas administrativas, funcionalidades de gestión de beneficios alimentarios,
-                                comercio electrónico, interacción entre usuarios o terceros, así como cualquier
-                                otro servicio habilitado por DALM Foods.
-                            </p>
-                        </section>
-
-                        {/* Section 2 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">2. Usuarios</h2>
-                            <p className="text-gray-700 mb-3">
-                                Los servicios están dirigidos a distintos tipos de usuarios:
-                            </p>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">1. Definiciones</h2>
                             <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                <li>Empresas registradas</li>
-                                <li>Colaboradores/Empleados</li>
-                                <li>Cocinas y restaurantes afiliados</li>
-                                <li>Administradores</li>
-                            </ul>
-                            <p className="text-gray-700 mt-3">
-                                El acceso podrá requerir registro, verificación o autorización previa.
-                            </p>
-                        </section>
-
-                        {/* Section 3 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">3. Uso de la Plataforma</h2>
-                            <p className="text-gray-700 mb-3">El usuario se compromete a:</p>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                <li>Proporcionar información veraz y actualizada</li>
-                                <li>Hacer uso lícito de la Plataforma</li>
-                                <li>No utilizar los servicios con fines fraudulentos, ilegales o contrarios a estos términos</li>
-                                <li>Mantener la confidencialidad de sus credenciales de acceso</li>
-                            </ul>
-                            <p className="text-gray-700 mt-3">
-                                La Plataforma se reserva el derecho de suspender o limitar el acceso ante incumplimientos.
-                            </p>
-                        </section>
-
-                        {/* Section 4 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">4. Servicios de Terceros</h2>
-                            <p className="text-gray-700">
-                                La Plataforma puede integrar servicios, productos o herramientas provenientes de terceros
-                                (cocinas locales, procesadores de pago, etc.). DALM Foods no se hace cargo por la calidad,
-                                disponibilidad o desempeño de dichos servicios externos.
-                            </p>
-                        </section>
-
-                        {/* Section 5 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">5. Disponibilidad</h2>
-                            <p className="text-gray-700">
-                                La Plataforma podrá experimentar interrupciones, mantenimientos o actualizaciones.
-                                No se garantiza disponibilidad continua ni ausencia de errores.
-                            </p>
-                        </section>
-
-                        {/* Section 6 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Responsabilidad</h2>
-                            <p className="text-gray-700 mb-3">
-                                El uso de la Plataforma es bajo responsabilidad del usuario. DALM Foods no será responsable por:
-                            </p>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                <li>Fallos técnicos o de conectividad</li>
-                                <li>Contenido o servicios proporcionados por terceros</li>
-                                <li>Daños derivados del uso indebido o no autorizado de la Plataforma</li>
-                            </ul>
-                            <p className="text-gray-700 mt-3">
-                                La responsabilidad total de DALM Foods, en caso de aplicar, se limitará al monto
-                                pagado por el usuario en los últimos 12 meses.
-                            </p>
-                        </section>
-
-                        {/* Section 7 */}
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Pagos</h2>
-                            <p className="text-gray-700 mb-3">En caso de existir servicios de pago:</p>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                                <li>Las tarifas, cargos y condiciones serán comunicadas dentro de la Plataforma</li>
-                                <li>Los pagos no son reembolsables salvo disposición legal o política específica</li>
-                                <li>Se podrán utilizar procesadores de pago externos</li>
+                                <li><strong>Plataforma:</strong> Sistema tecnológico de DALM Foods que permite la gestión de beneficios alimenticios entre Empresas, Restaurantes/Cocinas y Empleados.</li>
+                                <li><strong>Empresa:</strong> Persona moral que contrata los servicios de DALM Foods para otorgar beneficios de alimentación a sus empleados.</li>
+                                <li><strong>Restaurante / Cocina:</strong> Establecimiento o proveedor afiliado que ofrece alimentos a través de la plataforma.</li>
+                                <li><strong>Empleado / Usuario Final:</strong> Persona física beneficiaria del programa de alimentación otorgado por la Empresa.</li>
                             </ul>
                         </section>
 
-                        {/* Section 8 */}
+                        {/* 2. Registro y uso de la plataforma */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">8. Propiedad Intelectual</h2>
-                            <p className="text-gray-700">
-                                Todos los elementos de la Plataforma (software, diseño, marcas, contenido) pertenecen
-                                a DALM Foods o cuentan con licencias correspondientes. Está prohibido reproducir,
-                                distribuir o modificar sin autorización.
-                            </p>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">2. Registro y uso de la plataforma</h2>
+                            <p className="text-gray-700">Todos los usuarios deberán proporcionar información veraz, completa y actualizada. DALM Foods se reserva el derecho de suspender o cancelar cuentas con información falsa o uso indebido.</p>
+                            <p className="text-gray-700 mt-2">Cada usuario es responsable de mantener la confidencialidad de sus credenciales de acceso.</p>
                         </section>
 
-                        {/* Section 9 */}
+                        {/* 3. Obligaciones por tipo de usuario */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">9. Modificaciones</h2>
-                            <p className="text-gray-700">
-                                DALM Foods puede modificar estos Términos en cualquier momento. El uso posterior
-                                implica aceptación de los términos modificados.
-                            </p>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">3. Obligaciones por tipo de usuario</h2>
+
+                            <h3 className="text-lg font-semibold text-gray-900 mb-2">3.1 Empresas</h3>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                                <li>Administrar correctamente a sus empleados dentro de la plataforma.</li>
+                                <li>Definir reglas, presupuestos, subsidios y condiciones del beneficio alimenticio.</li>
+                                <li>Cubrir los pagos derivados de suscripciones, subsidios y/o consumos conforme al plan contratado.</li>
+                            </ul>
+
+                            <h3 className="text-lg font-semibold text-gray-900 mb-2">3.2 Restaurantes / Cocinas</h3>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-2">
+                                <li>Cumplir con las normas sanitarias y legales aplicables.</li>
+                                <li>Preparar y entregar los pedidos conforme a lo publicado en la plataforma.</li>
+                            </ul>
+                            <h4 className="text-base font-semibold text-gray-900 mt-2">Actualización de menús y disponibilidad</h4>
+                            <p className="text-gray-700 mt-1">Los Restaurantes y Cocinas deberán mantener actualizada, veraz y vigente la información de sus menús, precios, horarios y disponibilidad. DALM Foods no será responsable por errores, precios desactualizados, cancelaciones o faltantes derivados de información incorrecta proporcionada por el Restaurante o Cocina. El incumplimiento reiterado podrá resultar en la suspensión o cancelación de la cuenta.</p>
+
+                            <h3 className="text-lg font-semibold text-gray-900 mb-2 mt-4">3.3 Empleados / Usuarios Finales</h3>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Usar la plataforma únicamente para fines legítimos.</li>
+                                <li>Cubrir cualquier diferencia de precio no subsidiada por la Empresa.</li>
+                                <li>Respetar las reglas establecidas por la Empresa.</li>
+                            </ul>
                         </section>
 
-                        {/* Section 10 */}
+                        {/* 4. Pagos, comisiones y cargos */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">10. Ley Aplicable y Jurisdicción</h2>
-                            <p className="text-gray-700">
-                                Estos Términos se regirán por las leyes aplicables de <strong>México</strong> y
-                                cualquier controversia será resuelta en los tribunales competentes de dicha jurisdicción.
-                            </p>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">4. Pagos, comisiones y cargos</h2>
+                            <p className="text-gray-700 mb-2">DALM Foods podrá cobrar:</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Un porcentaje por transacción a los Restaurantes por cada pedido procesado.</li>
+                                <li>Un costo de suscripción mensual o anual a las Empresas, según el plan contratado.</li>
+                                <li>Un cargo fijo por envío cuando el Empleado solicite entrega a domicilio.</li>
+                            </ul>
+                            <p className="text-gray-700 mt-2">Los precios, porcentajes y condiciones estarán disponibles en la plataforma o en los contratos correspondientes.</p>
                         </section>
 
-                        {/* Section 11 */}
+                        {/* 5. Uso aceptable */}
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-4">11. Contacto</h2>
-                            <p className="text-gray-700 mb-3">
-                                Para consultas relacionadas con estos Términos:
-                            </p>
-                            <div className="bg-orange-50 border-l-4 border-orange-500 p-4 rounded">
-                                <p className="text-gray-800">
-                                    📧 Email: <a href="mailto:contacto@dalmfoods.com.mx" className="text-orange-600 hover:underline font-medium">contacto@dalmfoods.com.mx</a>
-                                </p>
-                                <p className="text-gray-800 mt-2">
-                                    📱 Teléfono: <a href="tel:+525576350310" className="text-orange-600 hover:underline font-medium">+52 (55) 7635-0310</a>
-                                </p>
-                            </div>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">5. Uso aceptable</h2>
+                            <p className="text-gray-700 mb-2">Queda prohibido:</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Usar la plataforma con fines fraudulentos o ilegales.</li>
+                                <li>Interferir con el funcionamiento del sistema.</li>
+                                <li>Suplantar la identidad de otros usuarios.</li>
+                            </ul>
+                        </section>
+
+                        {/* 6. Propiedad intelectual */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Propiedad intelectual</h2>
+                            <p className="text-gray-700">Todos los derechos sobre la plataforma, marcas, logotipos, software y contenidos pertenecen a DALM Foods. Su uso no autorizado está prohibido.</p>
+                        </section>
+
+                        {/* 7. Limitación de responsabilidad */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Limitación de responsabilidad</h2>
+                            <p className="text-gray-700 mb-2">DALM Foods no será responsable por:</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Incumplimientos atribuibles a Restaurantes, Cocinas o Empresas.</li>
+                                <li>Retrasos o fallas ajenas a su control.</li>
+                                <li>Daños indirectos derivados del uso de la plataforma.</li>
+                            </ul>
+                        </section>
+
+                        {/* 8. Suspensión y terminación */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">8. Suspensión y terminación</h2>
+                            <p className="text-gray-700">DALM Foods podrá suspender o cancelar cuentas que incumplan estos Términos, sin responsabilidad y sin obligación de reembolso.</p>
+                        </section>
+
+                        {/* 9. Legislación aplicable */}
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">9. Legislación aplicable</h2>
+                            <p className="text-gray-700">Estos Términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier controversia será sometida a los tribunales competentes.</p>
                         </section>
                     </div>
 
