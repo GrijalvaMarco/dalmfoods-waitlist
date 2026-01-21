@@ -1,0 +1,48 @@
+# Activar Rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Si el recurso existe como archivo o carpeta, servirlo
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Fallback SPA a index.html (rutas del App Router)
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Cache estática agresiva para assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/json "access plus 1 hour"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresDefault "access plus 1 hour"
+</IfModule>
+
+# ETags off para evitar validaciones inconsistentes
+FileETag None
+
+# Compresión (si módulos disponibles)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/plain text/html text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Seguridad básica
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Permissions-Policy "geolocation=(), microphone=()"
+</IfModule>
+
+# 404 custom (Next export genera 404.html)
+ErrorDocument 404 /404.html
